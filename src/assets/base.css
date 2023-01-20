@@ -66,7 +66,8 @@
   --vt-c-blue-dark: #3468a3;
   --vt-c-blue-darker: #255489;
 
-  --vt-c-pink: #f25d8f
+  --vt-c-pink: #f25d8f;
+  --vt-c-pink-lighter: RGBA(242, 93, 143, .3);
 }
 
 @media (prefers-color-scheme: dark) {

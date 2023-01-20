@@ -1,8 +1,16 @@
 @import './base.css';
 
 *{
-  padding: 0;
   margin: 0;
+  padding: 0;
+  transition: all 0.35s ease-in-out;
+  flex-flow: wrap;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: auto !important;
 }
 
 a{
@@ -17,10 +25,17 @@ button {
   -moz-user-select:none;
 }
 
+span {
+  transition: all 0s linear;
+  z-index: 1;
+}
+
 #app {
   width: 100%;
   height: 100%;
+  /*max-width: 1280px;*/
+  margin: 0 auto;
+  font-weight: normal;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }

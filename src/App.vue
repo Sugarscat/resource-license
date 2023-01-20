@@ -1,16 +1,58 @@
 <script setup>
 import TopHead from "@/components/TopHead.vue";
+import Decorate from "@/components/Decorate.vue";
 </script>
 
 <template>
-  <header>
-    <TopHead/>
-  </header>
-  <main>
-    <div class="main-content SmileySans">
-      <span class="rt-title">{{$t('rtTitle')}}</span>
-    </div>
-  </main>
+    <header>
+      <TopHead/>
+    </header>
+    <main>
+      <div class="main-content SmileySans">
+        <div class="text-title">
+          <span>{{$t('rtTitle')}}</span>
+          <Decorate/>
+        </div>
+        <div class="text-content">
+          <span>{{$t('rtContent')}}</span>
+        </div>
+        <div class="text-title">
+          <span>{{$t('noNeedTitle')}}</span>
+          <Decorate/>
+        </div>
+        <div class="text-content">
+          <span>{{$t('noNeedContent1')}}</span>
+          <span>{{$t('noNeedContent2')}}</span>
+        </div>
+        <div class="text-title">
+          <span>{{$t('needTitle')}}</span>
+          <Decorate/>
+        </div>
+        <div class="text-content">
+          <span>{{$t('needContent1')}}</span>
+          <span>{{$t('needContent2')}}</span>
+          <span>{{$t('needContent3')}}</span>
+          <span>{{$t('needContent4')}}</span>
+        </div>
+        <div class="text-title">
+          <span>{{$t('contactMeTitle')}}</span>
+          <Decorate/>
+        </div>
+        <div class="text-content">
+          <span>{{$t('contactMeContent1')}}</span>
+          <span>{{$t('contactMeContent2')}}</span>
+          <span>{{$t('contactMeContent3')}}</span>
+        </div>
+        <div class="text-title">
+          <span>{{$t('auTitle')}}</span>
+          <Decorate/>
+        </div>
+        <div class="text-content">
+          <span>{{$t('auContent1')}}</span>
+          <span>{{$t('auContent2')}}</span>
+        </div>
+      </div>
+    </main>
 </template>
 
 <style>
@@ -34,11 +76,40 @@ main{
 .main-content {
   width: 100%;
   display: flex;
-  justify-content: center;
-  padding: 40px;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 40px;
 }
 
-.rt-title {
-  font-size: 25px;
+.text-title {
+  height: 25px;
+  padding: 2px 10px;
+  font-size: 20px;
+  margin: 20px 0;
+  border: 2px solid var(--vt-c-gray);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
 }
+
+.text-content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--vt-c-blue-lighter);
+}
+
+.text-content span {
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 440px) {
+  .main-content {
+    padding: 20px 10px;
+  }
+}
+
 </style>
