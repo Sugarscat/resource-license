@@ -3,7 +3,7 @@ export default {
     rtContent: 'If you need to use video, pictures and other resources commercially, you must contact me to purchase a commercial license.',
 
     noNeedTitle: 'No authorization required',
-    noNeedContent1: '1. Repost and recreate videos, pictures and other resources with 【文化】 tags (must not violate the meaning of the original video). [Commercial use still requires authorization]',
+    noNeedContent1: '1. Repost and recreate videos, pictures and other resources with 【文化】 tags. [Commercial use still requires authorization]',
     noNeedContent2: '2. Use video/picture as personal desktop background/avatar. ',
 
     needTitle: 'Need authorization',
