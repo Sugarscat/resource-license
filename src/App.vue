@@ -1,6 +1,7 @@
 <script setup>
 import TopHead from "@/components/TopHead.vue";
 import Decorate from "@/components/Decorate.vue";
+import MailIcon from '@/components/IconMail.vue'
 </script>
 
 <template>
@@ -41,7 +42,11 @@ import Decorate from "@/components/Decorate.vue";
         <div class="text-content">
           <span>{{$t('contactMeContent1')}}</span>
           <span>{{$t('contactMeContent2')}}</span>
-          <span>{{$t('contactMeContent3')}}</span>
+          <span>{{$t('contactMeContent3')}}tsugarcat@gmail.com
+            <a class="email-content" href="mailto:tsugarcat@gmail.com">
+              <MailIcon/>
+            </a>
+          </span>
         </div>
         <div class="text-title">
           <span>{{$t('auTitle')}}</span>
@@ -50,6 +55,7 @@ import Decorate from "@/components/Decorate.vue";
         <div class="text-content">
           <span>{{$t('auContent1')}}</span>
           <span>{{$t('auContent2')}}</span>
+
         </div>
       </div>
     </main>
@@ -86,7 +92,7 @@ main{
   padding: 2px 10px;
   font-size: 20px;
   margin: 20px 0;
-  border: 2px solid var(--vt-c-gray);
+  border: 1px solid var(--vt-c-gray);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -104,6 +110,10 @@ main{
 
 .text-content span {
   padding: 10px 0;
+}
+
+.email-content {
+  display: flex;
 }
 
 @media screen and (max-width: 440px) {

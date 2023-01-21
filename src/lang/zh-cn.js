@@ -15,7 +15,7 @@ export default {
     contactMeTitle: '如何联系',
     contactMeContent1: '1.请先查看授权须知。',
     contactMeContent2: '2.通过哔哩哔哩的私信与本人取得联系。',
-    contactMeContent3: '3.通过邮件与本人取得联系：tsugarcat{\'@\'}gmail.com',
+    contactMeContent3: '3.通过邮件与本人取得联系：',
 
     auTitle: '授权须知',
     auContent1: '1.所有的申请将在72小时内处理完成，超时未回复即表示申请未通过。',

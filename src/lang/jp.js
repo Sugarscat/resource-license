@@ -15,7 +15,7 @@ export default {
     contactMeTitle: '連絡方法',
     contactMeContent1: '1.まず承認通知を確認してください。',
     contactMeContent2: '2. Bilibili のプライベート メッセージからご連絡ください。',
-    contactMeContent3: '3. メールで連絡してください: tsugarcat{\'@\'}gmail.com',
+    contactMeContent3: '3. メールで連絡してください: ',
 
     auTitle: '承認通知',
     auContent1: '1. すべての申請は 72 時間以内に処理されます。タイムアウト後に応答がない場合は、申請が承認されていないことを意味します。',

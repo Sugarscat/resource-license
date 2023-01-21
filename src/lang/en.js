@@ -15,7 +15,7 @@ export default {
     contactMeTitle: 'How to contact',
     contactMeContent1: '1. Please check the authorization notice first. ',
     contactMeContent2: "2. Get in touch with me through Bilibili's private message. ",
-    contactMeContent3: '3. Get in touch with me via email: tsugarcat{\'@\'}gmail.com',
+    contactMeContent3: '3. Get in touch with me via email:',
 
     auTitle: 'Authorization Notice',
     auContent1: '1. All applications will be processed within 72 hours. If there is no reply after the timeout, it means that the application has not been approved. ',
