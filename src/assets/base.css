@@ -115,3 +115,13 @@ body {
 .SmileySans {
   font-family: SmileySans, serif;
 }
+
+@font-face {
+  font-family: msyh;
+  src: url("fronts/msyh.ttc");
+}
+
+.msyh {
+  font-family: msyh, serif;
+}
+

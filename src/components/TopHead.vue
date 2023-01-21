@@ -138,6 +138,7 @@ export default {
   justify-content: center;
   border: 1px solid var(--menu-c-divider);
   box-shadow: var(--menu-shadow-2);
+  z-index: 9;
 }
 
 .choice-language:hover .language-flyout-menu {

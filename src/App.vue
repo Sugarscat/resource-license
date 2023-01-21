@@ -2,6 +2,8 @@
 import TopHead from "@/components/TopHead.vue";
 import Decorate from "@/components/Decorate.vue";
 import MailIcon from '@/components/IconMail.vue'
+import EmailContent from "@/components/EmailConnect.vue";
+import BiliConnect from "@/components/BiliConnect.vue";
 </script>
 
 <template>
@@ -15,7 +17,8 @@ import MailIcon from '@/components/IconMail.vue'
           <Decorate/>
         </div>
         <div class="text-content">
-          <span>{{$t('rtContent')}}</span>
+          <span>{{$t('rtContent1')}}</span>
+          <span>{{$t('rtContent2')}}</span>
         </div>
         <div class="text-title">
           <span>{{$t('noNeedTitle')}}</span>
@@ -55,7 +58,19 @@ import MailIcon from '@/components/IconMail.vue'
         <div class="text-content">
           <span>{{$t('auContent1')}}</span>
           <span>{{$t('auContent2')}}</span>
-
+          <div class="authorization-notice msyh">
+            <span>{{$t('auTextContent1')}}</span>
+            <span>{{$t('auTextContent2')}}</span>
+            <span>{{$t('auTextContent3')}}</span>
+            <span>{{$t('auTextContent4')}}</span>
+            <span>{{$t('auTextContent5')}}</span>
+          </div>
+          <span>{{$t('auContent3')}}</span>
+          <BiliConnect/>
+          <span>{{$t('auContent4')}}</span>
+          <span>{{$t('auContent5')}}</span>
+          <EmailContent/>
+          <span>{{$t('auContent6')}}</span>
         </div>
       </div>
     </main>
@@ -114,6 +129,18 @@ main{
 
 .email-content {
   display: flex;
+}
+
+.authorization-notice {
+  width: 100%;
+  border: 1px solid var(--vt-c-gray);
+  border-radius: 5px;
+  background-color: var(--vt-c-text-dark-2);
+}
+
+.authorization-notice span {
+  padding: 3px;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 440px) {
