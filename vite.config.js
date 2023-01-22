@@ -7,10 +7,9 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
-  transpileDependencies: true,
-  publicPath: '/resource-license/',
-  outputDir: 'dist/',
-  assetsDir: 'static/',
+  publicPath: process.env.NODE_ENV === 'production'
+      ? '/resource-license/'
+      : '/',
   base: '/resource-license/',
   resolve: {
     alias: {
