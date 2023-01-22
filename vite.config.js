@@ -7,12 +7,11 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
-  module:{
-    transpileDependencies: true,
-    publicPath: '/resource-license/',
-    outputDir: 'dist/',
-    assetsDir: 'static/'
-  },
+  transpileDependencies: true,
+  publicPath: '/resource-license/',
+  outputDir: 'dist/',
+  assetsDir: 'static/',
+  base: '/resource-license/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
