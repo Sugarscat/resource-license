@@ -47,7 +47,7 @@ npm run build
     git commit -m 'deploy'
     ```
 
-3. 部署到 https://<USERNAME>.github.io/<REPO>
+3. 强制推送到远端
     ```shell
     git push -f git@gitee.com:Sugarscat/resource-license.git master:g-pages
     ```
