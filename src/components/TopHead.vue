@@ -8,9 +8,9 @@
           </span>
         </span>
     <div class="language-flyout-menu">
-      <button ref="btnZh" class="黑体 active" @click="choiceZh">中文</button>
-      <button ref="btnEn" class="黑体" @click="choiceEn">English</button>
-      <button ref="btnJp" class="黑体" @click="choiceJp">日本語</button>
+      <button ref="btnZh" class="active" @click="choiceZh">中文</button>
+      <button ref="btnEn" class="" @click="choiceEn">English</button>
+      <button ref="btnJp" class="" @click="choiceJp">日本語</button>
     </div>
   </div>
 </template>
@@ -47,9 +47,9 @@ export default {
     },
     choiceZh() {
       this.$i18n.locale = 'zh';
-      this.$refs.btnZh.className = '黑体 active';
-      this.$refs.btnEn.className = '黑体';
-      this.$refs.btnJp.className = '黑体';
+      this.$refs.btnZh.className = 'active';
+      this.$refs.btnEn.className = '';
+      this.$refs.btnJp.className = '';
       Cookies.set(
           'language',
           'zh'
@@ -57,9 +57,9 @@ export default {
     },
     choiceEn() {
       this.$i18n.locale = 'en';
-      this.$refs.btnZh.className = '黑体';
-      this.$refs.btnEn.className = '黑体 active';
-      this.$refs.btnJp.className = '黑体';
+      this.$refs.btnZh.className = '';
+      this.$refs.btnEn.className = 'active';
+      this.$refs.btnJp.className = '';
       Cookies.set(
           'language',
           'en'
@@ -67,9 +67,9 @@ export default {
     },
     choiceJp() {
       this.$i18n.locale = 'jp';
-      this.$refs.btnZh.className = '黑体';
-      this.$refs.btnEn.className = '黑体';
-      this.$refs.btnJp.className = '黑体 active';
+      this.$refs.btnZh.className = '';
+      this.$refs.btnEn.className = '';
+      this.$refs.btnJp.className = 'active';
       Cookies.set(
           'language',
           'jp'
