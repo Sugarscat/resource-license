@@ -28,9 +28,29 @@ npm run dev
 npm run build
 ```
 
-```shell
-git checkout -b g-pages
-git add -f dist
-git commit -m 'first commit'
-git subtree push --prefix dist origin g-pages
-```
+### Pages 页面提交
+> 此功能需开启SSH公钥
+
+1. cd 到构建输出的目录下
+    ```shell
+    cd dist
+    ````
+
+2. 提交修改
+    ```shell
+    git init
+    ```
+   ```shell
+    git add -A
+    ```
+   ```shell
+    git commit -m 'deploy'
+    ```
+
+3. 部署到 https://<USERNAME>.github.io/<REPO>
+    ```shell
+    git push -f git@gitee.com:Sugarscat/resource-license.git master:g-pages
+    ```
+    ```shell
+    exit
+    ```
