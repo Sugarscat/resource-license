@@ -107,21 +107,13 @@ body {
 }
 
 /*front*/
-@font-face {
-  font-family: SmileySans;
-  src: url("fronts/SmileySans.ttf");
+.黑体 {
+  font-family: 黑体, serif;
+
 }
 
-.SmileySans {
-  font-family: SmileySans, serif;
-}
 
-@font-face {
-  font-family: msyh;
-  src: url("fronts/msyh.ttc");
-}
-
-.msyh {
-  font-family: msyh, serif;
+.微软雅黑 {
+  font-family: 微软雅黑, serif;
 }
 

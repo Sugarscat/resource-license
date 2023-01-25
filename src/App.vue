@@ -11,7 +11,7 @@ import BiliConnect from "@/components/BiliConnect.vue";
       <TopHead/>
     </header>
     <main>
-      <div class="main-content SmileySans">
+      <div class="main-content boldface">
         <div class="text-title">
           <span>{{$t('rtTitle')}}</span>
           <Decorate/>
@@ -58,7 +58,7 @@ import BiliConnect from "@/components/BiliConnect.vue";
         <div class="text-content">
           <span>{{$t('auContent1')}}</span>
           <span>{{$t('auContent2')}}</span>
-          <div class="authorization-notice msyh">
+          <div class="authorization-notice 微软雅黑">
             <span>{{$t('auTextContent1')}}</span>
             <span>{{$t('auTextContent2')}}</span>
             <span>{{$t('auTextContent3')}}</span>
