@@ -11,7 +11,7 @@ import BiliConnect from "@/components/BiliConnect.vue";
       <TopHead/>
     </header>
     <main>
-      <div class="main-content boldface">
+      <div class="main-content 黑体">
         <div class="text-title">
           <span>{{$t('rtTitle')}}</span>
           <Decorate/>
