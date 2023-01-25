@@ -7,10 +7,10 @@
             </svg>
           </span>
         </span>
-    <div class="language-flyout-menu">
-      <button ref="btnZh" class="SmileySans active" @click="choiceZh">中文</button>
-      <button ref="btnEn" class="SmileySans" @click="choiceEn">English</button>
-      <button ref="btnJp" class="SmileySans" @click="choiceJp">日本語</button>
+    <div class="language-flyout-menu 黑体">
+      <button ref="btnZh" class="黑体 active" @click="choiceZh">中文</button>
+      <button ref="btnEn" class="" @click="choiceEn">English</button>
+      <button ref="btnJp" class="" @click="choiceJp">日本語</button>
     </div>
   </div>
 </template>
@@ -32,32 +32,24 @@ export default {
     choiceLanguage() {
       switch (Cookies.get('language')) {
         case 'zh':
-          this.$refs.btnZh.className = 'SmileySans active';
-          this.$refs.btnEn.className = 'SmileySans';
-          this.$refs.btnJp.className = 'SmileySans';
+          this.choiceZh();
           break;
         case 'en':
-          this.$refs.btnZh.className = 'SmileySans';
-          this.$refs.btnEn.className = 'SmileySans active';
-          this.$refs.btnJp.className = 'SmileySans';
+          this.choiceEn();
           break;
         case 'jp':
-          this.$refs.btnZh.className = 'SmileySans';
-          this.$refs.btnEn.className = 'SmileySans';
-          this.$refs.btnJp.className = 'SmileySans active';
+          this.choiceJp();
           break;
         default:
-          this.$refs.btnZh.className = 'SmileySans active';
-          this.$refs.btnEn.className = 'SmileySans';
-          this.$refs.btnJp.className = 'SmileySans';
+          this,this.choiceZh();
           break;
       }
     },
     choiceZh() {
       this.$i18n.locale = 'zh';
-      this.$refs.btnZh.className = 'SmileySans active';
-      this.$refs.btnEn.className = 'SmileySans';
-      this.$refs.btnJp.className = 'SmileySans';
+      this.$refs.btnZh.className = 'active';
+      this.$refs.btnEn.className = '';
+      this.$refs.btnJp.className = '';
       Cookies.set(
           'language',
           'zh'
@@ -65,9 +57,9 @@ export default {
     },
     choiceEn() {
       this.$i18n.locale = 'en';
-      this.$refs.btnZh.className = 'SmileySans';
-      this.$refs.btnEn.className = 'SmileySans active';
-      this.$refs.btnJp.className = 'SmileySans';
+      this.$refs.btnZh.className = '';
+      this.$refs.btnEn.className = 'active';
+      this.$refs.btnJp.className = '';
       Cookies.set(
           'language',
           'en'
@@ -75,9 +67,9 @@ export default {
     },
     choiceJp() {
       this.$i18n.locale = 'jp';
-      this.$refs.btnZh.className = 'SmileySans';
-      this.$refs.btnEn.className = 'SmileySans';
-      this.$refs.btnJp.className = 'SmileySans active';
+      this.$refs.btnZh.className = '';
+      this.$refs.btnEn.className = '';
+      this.$refs.btnJp.className = 'active';
       Cookies.set(
           'language',
           'jp'
