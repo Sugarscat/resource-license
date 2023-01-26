@@ -10,7 +10,7 @@ export default {
     needTitle: 'Need authorization',
     needContent1: '1. Repost videos, pictures and other resources. ',
     needContent2: '2. Secondary creation of videos, pictures and other resources. ',
-    needContent3: '3. Use videos, pictures and other resources for commercial use. ',
+    needContent3: '3. Commercial videos, pictures and other resources. ',
     needContent4: '4. For more information, please refer to the authorization notice. ',
 
     contactMeTitle: 'How to contact',

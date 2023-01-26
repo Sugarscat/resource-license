@@ -10,8 +10,8 @@ export default {
     needTitle: '承認が必要',
     needContent1: '1. 動画、写真、その他のリソースを再投稿します。 ',
     needContent2: '2.動画、写真、その他の素材の二次創作。 ',
-    needContent3: '3. 動画、写真、その他のリソースを商用利用する。',
-    needContent4: '4. 詳細については、承認通知を参照してください。',
+    needContent3: '3. コマーシャル ビデオ、写真、その他のリソース。 ',
+    needContent4: '4. 詳細については、承認通知を参照してください。 ',
 
     contactMeTitle: '連絡方法',
     contactMeContent1: '1.まず承認通知を確認してください。',

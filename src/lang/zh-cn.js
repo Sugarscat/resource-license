@@ -9,8 +9,8 @@ export default {
 
     needTitle: '需要授权',
     needContent1: '1.转载视频、图片等其他资源。',
-    needContent2: '2.将视频、图片等其他资源进行二次创作。',
-    needContent3: '3.将视频、图片等其他资源进行商用。',
+    needContent2: '2.二次创作视频、图片等其他资源。',
+    needContent3: '3.商用视频、图片等其他资源。',
     needContent4: '4.更多请查看授权须知。',
 
     contactMeTitle: '如何联系',
