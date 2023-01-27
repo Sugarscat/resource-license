@@ -1,5 +1,22 @@
 <template>
   <IconLogo/>
+  <div class="top-menu">
+    <IconMenu/>
+    <div class="t-menu">
+      <router-link to="/resource-license/home">
+        <span class="SmileySans">{{ $t('menu.homePageText') }}</span>
+      </router-link>
+      <router-link to="/resource-license/More">
+        <span class="SmileySans">{{ $t('menu.morePageText') }}</span>
+      </router-link>
+      <router-link to="/resource-license/Authorized">
+        <span class="SmileySans">{{ $t('menu.authorizedPageText') }}</span>
+      </router-link>
+      <router-link to="/resource-license/Authorized">
+        <span class="SmileySans">{{ $t('menu.unauthorizedPageText') }}</span>
+      </router-link>
+    </div>
+  </div>
   <div class="choice-language">
         <span class="separate">
           <span class="icon">
@@ -18,10 +35,11 @@
 <script>
 import Cookies from "js-cookie";
 import IconLogo from "@/components/IconLogo.vue";
+import IconMenu from "@/components/IconMenu.vue";
 
 export default {
   name: "ChoiceLanguage",
-  components: {IconLogo},
+  components: {IconMenu, IconLogo},
   created(){
     this.$nextTick(function(){
       this.choiceLanguage();
@@ -41,7 +59,7 @@ export default {
           this.choiceJp();
           break;
         default:
-          this,this.choiceZh();
+          this.this.choiceZh();
           break;
       }
     },
@@ -80,6 +98,49 @@ export default {
 </script>
 
 <style scoped>
+.top-menu {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 120px;
+}
+
+.t-menu {
+  width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 45px;
+  transition: opacity .25s,visibility .25s,transform .25s;
+  background-color: var(--menu-c-background);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--menu-c-divider);
+  box-shadow: var(--menu-shadow-2);
+  z-index: 10;
+}
+
+.top-menu:hover .t-menu {
+  display: flex;
+}
+
+.t-menu a{
+  margin: 3px 0;
+  text-decoration: none;
+  color: var(--menu-c-text);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.t-menu a:hover {
+  color: var(--vt-c-blue-light);
+}
+
 .choice-language {
   height: 50px;
   width: 50px;
@@ -89,6 +150,8 @@ export default {
   border: 1px solid rgba(0,0,0,0);
   background: rgba(0,0,0,0);
   margin: 0 40px 0 0;
+  position: absolute;
+  right: 20px;
 }
 
 .choice-language .separate {
@@ -153,12 +216,16 @@ export default {
 }
 
 @media screen and (max-width: 440px) {
+  .top-menu {
+    right: 80px;
+  }
   .choice-language {
     margin: 0 10px 0 0;
+    right: 10px;
   }
 
   .language-flyout-menu {
-    right: 10px;
+    right: 0;
   }
 }
 

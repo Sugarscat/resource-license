@@ -42,3 +42,8 @@ span {
   display: flex;
   justify-content: center;
 }
+
+.router-link-active,
+.router-link-active span {
+  color: var(--vt-c-blue) !important;
+}
