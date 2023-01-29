@@ -1,15 +1,16 @@
-import { createRouter, createWebHistory } from "vue-router";
-
-import Home from "@/components/Home.vue";
+import { createRouter, createWebHashHistory } from "vue-router";
 
 const routes = [
-    { path: '/resource-license/', redirect: '/resource-license/home' },
-    { path: '/resource-license/home', component: Home },
+    { path: '/', redirect: '/home' },
+    { path: '/home', component: ()=> import("@/components/Home.vue") },
+    { path: '/more', component: ()=> import("@/components/More.vue") },
+    { path: '/authorized', component: ()=> import("@/components/Authorized.vue") },
+    { path: '/unauthorized', component: ()=> import("@/components/Unauthorized.vue") },
 ]
 
 const router = createRouter({
     routes,
-    history: createWebHistory(),
+    history: createWebHashHistory(),
 })
 
 export default router;

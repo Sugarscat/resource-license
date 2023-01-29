@@ -3,16 +3,16 @@
   <div class="top-menu">
     <IconMenu/>
     <div class="t-menu">
-      <router-link to="/resource-license/home">
+      <router-link to="/home">
         <span class="SmileySans">{{ $t('menu.homePageText') }}</span>
       </router-link>
-      <router-link to="/resource-license/More">
+      <router-link to="/more">
         <span class="SmileySans">{{ $t('menu.morePageText') }}</span>
       </router-link>
-      <router-link to="/resource-license/Authorized">
+      <router-link to="/authorized">
         <span class="SmileySans">{{ $t('menu.authorizedPageText') }}</span>
       </router-link>
-      <router-link to="/resource-license/Authorized">
+      <router-link to="/unauthorized">
         <span class="SmileySans">{{ $t('menu.unauthorizedPageText') }}</span>
       </router-link>
     </div>
