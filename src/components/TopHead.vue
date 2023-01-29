@@ -129,16 +129,22 @@ export default {
 }
 
 .t-menu a{
+  width: 100%;
   margin: 3px 0;
+  padding: 2px 0;
   text-decoration: none;
   color: var(--menu-c-text);
+  display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
+  border-radius: 3px;
+  background-color: var(--color-background-mute);
 }
 
 .t-menu a:hover {
   color: var(--vt-c-blue-light);
+  background-color: var(--vt-c-blue-lighter);
 }
 
 .choice-language {
