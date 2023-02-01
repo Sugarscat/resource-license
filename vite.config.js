@@ -19,15 +19,5 @@ export default defineConfig({
   server: {
     hmr: true,
     port: 3001,
-    proxy: {
-      '/api': {
-        target: "",
-        secure: false,
-        changeOrigin: true,
-        pathRewriter: {
-          '^/api': '/api',
-        },
-      },
-    },
   }
 })
