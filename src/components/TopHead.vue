@@ -59,7 +59,7 @@ export default {
           this.choiceJp();
           break;
         default:
-          this.this.choiceZh();
+          this.choiceZh();
           break;
       }
     },

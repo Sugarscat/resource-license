@@ -41,6 +41,7 @@ span {
   font-weight: normal;
   display: flex;
   justify-content: center;
+  align-content: flex-start;
 }
 
 .router-link-active,
