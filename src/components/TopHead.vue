@@ -9,12 +9,12 @@
       <router-link to="/more">
         <span class="SmileySans">{{ $t('menu.morePageText') }}</span>
       </router-link>
-      <router-link to="/authorized">
+      <a href="#">
         <span class="SmileySans">{{ $t('menu.authorizedPageText') }}</span>
-      </router-link>
-      <router-link to="/unauthorized">
+      </a>
+      <a href="#">
         <span class="SmileySans">{{ $t('menu.unauthorizedPageText') }}</span>
-      </router-link>
+      </a>
     </div>
   </div>
   <div class="choice-language">

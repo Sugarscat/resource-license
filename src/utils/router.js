@@ -2,10 +2,8 @@ import { createRouter, createWebHashHistory } from "vue-router";
 
 const routes = [
     { path: '/', redirect: '/home' },
-    { path: '/home', component: ()=> import("@/components/Home.vue") },
-    { path: '/more', component: ()=> import("@/components/More.vue") },
-    { path: '/authorized', component: ()=> import("@/components/Authorized.vue") },
-    { path: '/unauthorized', component: ()=> import("@/components/Unauthorized.vue") },
+    { path: '/home', component: ()=> import("@/components/HomePage.vue") },
+    { path: '/more', component: ()=> import("@/components/MorePage.vue") },
 ]
 
 const router = createRouter({
