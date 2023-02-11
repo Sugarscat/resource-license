@@ -25,7 +25,7 @@
           </span>
         </span>
     <div class="language-flyout-menu">
-      <button ref="btnZh" class="active" @click="choiceZh">中文</button>
+      <button ref="btnZh" class="active" @click="choiceZh">简体中文</button>
       <button ref="btnEn" class="" @click="choiceEn">English</button>
       <button ref="btnJp" class="" @click="choiceJp">日本語</button>
     </div>

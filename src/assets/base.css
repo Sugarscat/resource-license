@@ -70,20 +70,20 @@
   --vt-c-pink-lighter: RGBA(242, 93, 143, .3);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-bground: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
+::-webkit-scrollbar {
+  padding: 0;
+  margin: 0;
+  width: 10px;
+}
 
-    --menu-shadow-2: var(--menu-shadow-3);
+::-webkit-scrollbar-track {
+  display: none;
+}
 
-    --menu-c-background: var(--vt-c-black-mute);
-    --menu-c-text: var(--vt-c-text-dark-5);
-    --menu-c-span: var(--vt-c-white);
-    --menu-c-divider: var(--vt-c-divider-dark-1);
-
-    --color-text: var(--vt-c-white-mute);
-  }
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  border-radius: 5px;
+  background-color: rgba(178, 178, 178, .5);
 }
 
 *,
